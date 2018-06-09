@@ -1,0 +1,10 @@
+.section1_container {
+  max-width: 955px;
+  width: 90%;
+  margin: 0 auto; }
+  .section1_container .section1_menu {
+    list-style-type: none; }
+    .section1_container .section1_menu li {
+      display: inline-block; }
+      .section1_container .section1_menu li .wrapper {
+        margin: 0 20px; }
