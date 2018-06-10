@@ -1,3 +1,212 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserratlight.woff2") format("woff2"), url("../fonts/montserratlight.woff") format("woff"), url("../fonts/montserratlight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat.woff2") format("woff2"), url("../fonts/montserrat.woff") format("woff"), url("../fonts/montserrat.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserratbold.woff2") format("woff2"), url("../fonts/montserratbold.woff") format("woff"), url("../fonts/montserratbold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserratblack.woff2") format("woff2"), url("../fonts/montserratblack.woff") format("woff"), url("../fonts/montserratblack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto.woff2") format("woff2"), url("../fonts/Roboto.woff") format("woff"), url("../fonts/Roboto.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Robotomedium.woff2") format("woff2"), url("../fonts/Robotomedium.woff") format("woff"), url("../fonts/Robotomedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Robotobold.woff2") format("woff2"), url("../fonts/Robotobold.woff") format("woff"), url("../fonts/Robotobold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Robotoblack.woff2") format("woff2"), url("../fonts/Robotoblack.woff") format("woff"), url("../fonts/Robotoblack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 10px; }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.container {
+  max-width: 955px;
+  width: 90%;
+  margin: 0 auto; }
+
 header {
-  background: white;
-  color: red; }
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  header .logo {
+    background: #151a1f;
+    padding: 15px 35px;
+    width: 240px; }
+  header nav ul li {
+    margin-right: 30px;
+    float: left; }
+    header nav ul li:last-child {
+      margin-right: 0; }
+    header nav ul li a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #151a1f;
+      font-family: "Roboto";
+      font-weight: 700;
+      font-size: 1.4rem;
+      position: relative;
+      transition: all 1s ease; }
+      header nav ul li a:after {
+        content: "";
+        display: block;
+        height: 4px;
+        width: 25%;
+        background: transparent; }
+      header nav ul li a:hover {
+        border-bottom: 1px solid #151a1f;
+        transition: all 1s ease; }
+        header nav ul li a:hover:after {
+          content: "";
+          display: block;
+          height: 4px;
+          width: 25%;
+          background: #ff1815; }
+  header .feedback {
+    display: flex;
+    align-items: center; }
+    header .feedback .calendar {
+      margin-right: 30px; }
+      header .feedback .calendar p {
+        color: #151a1f;
+        font-family: "Roboto";
+        font-size: 1.2rem;
+        font-weight: 400;
+        text-align: right; }
+      header .feedback .calendar a {
+        color: #ff1818;
+        font-family: "Roboto";
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-decoration: none;
+        text-align: right; }
+    header .feedback .numbers .phone_img {
+      float: left;
+      margin-right: 15px;
+      margin-top: 15px; }
+    header .feedback .numbers .phones_number {
+      float: left;
+      border-right: 6px solid #ee2d2c;
+      padding: 3px 0px;
+      padding-right: 15px; }
+      header .feedback .numbers .phones_number a {
+        display: block;
+        color: #151a1f;
+        font-family: "Roboto";
+        font-size: 1.8rem;
+        font-weight: 900;
+        margin-bottom: 8px;
+        text-decoration: none; }
+        header .feedback .numbers .phones_number a:last-child {
+          margin-bottom: 0; }
+
+#second {
+  position: relative; }
+  #second .slide_kart {
+    position: absolute;
+    background: rgba(21, 26, 31, 0.8);
+    padding: 36px 86px 44px 76px;
+    color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+    border-right: 6px solid #ff1516; }
+    #second .slide_kart ul li {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.8rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-bottom: 15px; }
+  #second .main_bg {
+    background: url(../img/header_bg.png) no-repeat 50% 50%/cover;
+    margin-left: 240px;
+    padding: 165px 0px;
+    padding-left: 230px;
+    position: relative; }
+    #second .main_bg h1 {
+      color: #ffffff;
+      font-family: "Montserrat", sans-serif;
+      font-size: 4.9rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 50px; }
+    #second .main_bg a {
+      color: #fff;
+      border: 2px solid #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 15px 20px;
+      font-family: "Roboto";
+      font-size: 1.4rem;
+      font-weight: 400; }
+
+#advertis {
+  background: #fff;
+  padding: 70px 0px 55px 0px;
+  position: relative; }
+  #advertis .advert_more {
+    display: block;
+    color: #fff;
+    bottom: 0;
+    background: #ff5;
+    padding: 8px 26px;
+    font-family: "Roboto";
+    font-size: 1.2rem;
+    font-weight: 400;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none; }
+  #advertis .advert_offer {
+    display: flex;
+    justify-content: flex-start; }
+    #advertis .advert_offer .advert_offer__list {
+      position: relative; }
+      #advertis .advert_offer .advert_offer__list .hdword {
+        font-family: "Montserrat", sans-serif;
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin-left: 50px;
+        margin-bottom: -20px;
+        position: absolute;
+        top: -30px;
+        left: 20px; }
+        #advertis .advert_offer .advert_offer__list .hdword span {
+          color: #ff1516; }
+      #advertis .advert_offer .advert_offer__list .adv_text {
+        display: flex;
+        align-items: center; }
+        #advertis .advert_offer .advert_offer__list .adv_text .adv_info {
+          font-family: "Roboto";
+          font-size: 1.3rem;
+          margin-left: 10px;
+          font-weight: 500; }

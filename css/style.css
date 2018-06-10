@@ -25,11 +25,6 @@
   font-style: normal; }
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/Robotoitalic.woff2") format("woff2"), url("../fonts/Robotoitalic.woff") format("woff"), url("../fonts/Robotoitalic.ttf") format("truetype");
-  font-weight: 400;
-  font-style: italic; }
-@font-face {
-  font-family: "Roboto";
   src: url("../fonts/Robotomedium.woff2") format("woff2"), url("../fonts/Robotomedium.woff") format("woff"), url("../fonts/Robotomedium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal; }
@@ -43,33 +38,519 @@
   src: url("../fonts/Robotoblack.woff2") format("woff2"), url("../fonts/Robotoblack.woff") format("woff"), url("../fonts/Robotoblack.ttf") format("truetype");
   font-weight: 900;
   font-style: normal; }
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none; }
+
+html {
+  font-size: 10px; }
+
 .clearfix::after {
   content: "";
   display: table;
   clear: both; }
 
+body {
+  background: #f6f5f5; }
+
+.container {
+  max-width: 955px;
+  width: 90%;
+  margin: 0 auto; }
+
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   header .logo {
-    background: #151a1f; }
+    background: #151a1f;
+    padding: 15px 35px;
+    width: 240px; }
   header nav ul li {
+    margin-right: 30px;
     float: left; }
+    header nav ul li:last-child {
+      margin-right: 0; }
     header nav ul li a {
       text-decoration: none;
       text-transform: uppercase;
       color: #151a1f;
       font-family: "Roboto";
-      font-weight: 700; }
+      font-weight: 700;
+      font-size: 1.4rem;
+      position: relative;
+      -webkit-transition: all 1s ease;
+      transition: all 1s ease; }
+      header nav ul li a:after {
+        content: "";
+        display: block;
+        height: 4px;
+        width: 25%;
+        background: transparent; }
+      header nav ul li a:hover {
+        border-bottom: 1px solid #151a1f;
+        -webkit-transition: all 1s ease;
+        transition: all 1s ease; }
+        header nav ul li a:hover:after {
+          content: "";
+          display: block;
+          height: 4px;
+          width: 25%;
+          background: #ff1815; }
   header .feedback {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center; }
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    header .feedback .calendar {
+      margin-right: 30px; }
+      header .feedback .calendar p {
+        color: #151a1f;
+        font-family: "Roboto";
+        font-size: 1.2rem;
+        font-weight: 400;
+        text-align: right; }
+      header .feedback .calendar a {
+        color: #ff1818;
+        font-family: "Roboto";
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-decoration: none;
+        text-align: right; }
     header .feedback .numbers .phone_img {
-      float: left; }
+      float: left;
+      margin-right: 15px;
+      margin-top: 15px; }
     header .feedback .numbers .phones_number {
-      float: left; }
+      float: left;
+      border-right: 6px solid #ee2d2c;
+      padding: 3px 0px;
+      padding-right: 15px; }
       header .feedback .numbers .phones_number a {
-        display: block; }
+        display: block;
+        color: #151a1f;
+        font-family: "Roboto";
+        font-size: 1.8rem;
+        font-weight: 900;
+        margin-bottom: 8px;
+        text-decoration: none; }
+        header .feedback .numbers .phones_number a:last-child {
+          margin-bottom: 0; }
+
+#second {
+  position: relative; }
+  #second .slide_kart {
+    position: absolute;
+    background: rgba(21, 26, 31, 0.8);
+    padding: 36px 86px 44px 76px;
+    color: #fff;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: 99;
+    border-right: 6px solid #ff1516; }
+    #second .slide_kart ul li {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.8rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-bottom: 15px; }
+  #second .main_bg {
+    background: url(../img/header_bg.png) no-repeat 50% 50%/cover;
+    margin-left: 240px;
+    padding: 165px 0px;
+    padding-left: 230px;
+    position: relative; }
+    #second .main_bg h1 {
+      color: #ffffff;
+      font-family: "Montserrat", sans-serif;
+      font-size: 4.9rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 50px; }
+    #second .main_bg a {
+      color: #fff;
+      border: 2px solid #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 15px 20px;
+      font-family: "Roboto";
+      font-size: 1.4rem;
+      font-weight: 400; }
+
+#advertis {
+  background: #fff;
+  padding: 70px 0px 55px 0px;
+  position: relative;
+  margin-top: 40px; }
+  #advertis .advert_more {
+    display: block;
+    color: #fff;
+    bottom: 0;
+    background: #ff1516;
+    padding: 8px 26px;
+    font-family: "Roboto";
+    font-size: 1.2rem;
+    font-weight: 400;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    text-decoration: none; }
+  #advertis .advert_offer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    #advertis .advert_offer .advert_offer__list {
+      position: relative; }
+      #advertis .advert_offer .advert_offer__list .hdword {
+        font-family: "Montserrat", sans-serif;
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin-left: 50px;
+        margin-bottom: -20px;
+        position: absolute;
+        top: -30px;
+        left: 20px; }
+        #advertis .advert_offer .advert_offer__list .hdword span {
+          color: #ff1516; }
+      #advertis .advert_offer .advert_offer__list .adv_text {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        #advertis .advert_offer .advert_offer__list .adv_text .adv_info {
+          font-family: "Roboto";
+          font-size: 1.3rem;
+          margin-left: 10px;
+          font-weight: 500; }
+
+#uslugi {
+  padding-bottom: 85px; }
+  #uslugi h2 {
+    text-align: center;
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 75px;
+    margin-bottom: 30px; }
+  #uslugi .uslug_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    #uslugi .uslug_wrap .uslug_wrap__list {
+      padding: 15px 15px 20px 15px;
+      text-align: center;
+      background: #fff;
+      margin-bottom: 10px;
+      margin-left: 10px; }
+      #uslugi .uslug_wrap .uslug_wrap__list .usl_img {
+        position: relative; }
+        #uslugi .uslug_wrap .uslug_wrap__list .usl_img p {
+          position: absolute;
+          top: 50%;
+          color: #fff;
+          text-transform: uppercase;
+          font-family: "Montserrat", sans-serif;
+          font-size: 2rem;
+          font-weight: 900;
+          left: 50%;
+          width: 75%;
+          -webkit-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%); }
+      #uslugi .uslug_wrap .uslug_wrap__list ul li {
+        color: #000000;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.4rem;
+        font-weight: 400;
+        display: inline-block;
+        text-transform: uppercase;
+        text-align: center; }
+
+#capabilities {
+  background: #fff;
+  position: relative;
+  padding-top: 125px;
+  padding-bottom: 60px; }
+  #capabilities h2 {
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    background: #ff1516;
+    text-align: center;
+    padding: 20px 0px;
+    text-transform: uppercase;
+    margin-top: -160px; }
+  #capabilities .capab_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 100px; }
+    #capabilities .capab_wrap__list {
+      width: 30%; }
+      #capabilities .capab_wrap__list .cap_wrap_img {
+        height: 151px; }
+      #capabilities .capab_wrap__list .cap_h {
+        font-family: "Montserrat", sans-serif;
+        font-size: 2.4rem;
+        color: #ff1516;
+        font-weight: 700;
+        line-height: 24px;
+        margin-bottom: 25px;
+        margin-top: 30px; }
+      #capabilities .capab_wrap__list .cap_pred {
+        color: #000000;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.4rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 28px; }
+      #capabilities .capab_wrap__list .cap_info {
+        color: #000000;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.3rem;
+        font-weight: 400;
+        height: 65px; }
+      #capabilities .capab_wrap__list a {
+        color: #ffffff;
+        display: block;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.2rem;
+        font-weight: 400;
+        background: #ff1516;
+        width: 90px;
+        text-align: center;
+        padding: 8px 15px;
+        text-decoration: none; }
+
+#application {
+  background: #f6f5f5;
+  padding: 50px 0px; }
+  #application .applic_offer {
+    border: 3px solid #a0a0a0;
+    background: #fff;
+    padding: 30px 0px; }
+    #application .applic_offer .app_fb {
+      color: #000000;
+      font-family: "Montserrat", sans-serif;
+      font-size: 2.4rem;
+      font-weight: 700;
+      text-align: center; }
+    #application .applic_offer .app_call {
+      color: #000000;
+      font-family: "Roboto", sans-serif;
+      font-size: 1.3rem;
+      font-weight: 400;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 25px; }
+    #application .applic_offer form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      #application .applic_offer form input {
+        margin-right: 30px;
+        width: 255px;
+        padding: 15px 0px;
+        padding-left: 10px;
+        border: 1px solid #a9a9a9; }
+        #application .applic_offer form input:last-child {
+          margin-right: 0;
+          padding: 13px 0px; }
+      #application .applic_offer form .send {
+        color: #ffffff;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.8rem;
+        background: #ff1516;
+        font-weight: 700;
+        border: 0;
+        cursor: pointer; }
+
+#projects h2 {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 25px; }
+#projects .proj_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  #projects .proj_wrap .proj_list {
+    width: 100%; }
+    #projects .proj_wrap .proj_list .proj_list__img {
+      width: 100%; }
+      #projects .proj_wrap .proj_list .proj_list__img img {
+        width: 100%;
+        height: auto; }
+
+#about .about_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+#skills {
+  background: #f6f5f5;
+  padding-top: 90px;
+  padding-bottom: 100px; }
+  #skills .skills_wrap {
+    border: 3px solid #ff1516;
+    padding: 50px 25px;
+    background: #fff; }
+    #skills .skills_wrap h2 {
+      text-align: center;
+      color: #000000;
+      font-family: "Montserrat", sans-serif;
+      font-size: 2.4rem;
+      font-weight: 700;
+      text-transform: uppercase; }
+    #skills .skills_wrap .main__offer_skill {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      #skills .skills_wrap .main__offer_skill .skills_wrap__offer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 28%; }
+        #skills .skills_wrap .main__offer_skill .skills_wrap__offer img {
+          max-width: 100%; }
+        #skills .skills_wrap .main__offer_skill .skills_wrap__offer .skill_list {
+          margin-top: 50px; }
+          #skills .skills_wrap .main__offer_skill .skills_wrap__offer .skill_list ul {
+            margin-left: 20px;
+            list-style-image: url(../img/kk.png); }
+            #skills .skills_wrap .main__offer_skill .skills_wrap__offer .skill_list ul li {
+              font-family: "Roboto", sans-serif;
+              font-weight: 700; }
+          #skills .skills_wrap .main__offer_skill .skills_wrap__offer .skill_list .sk_num {
+            color: #a1a1a1;
+            font-family: "Montserrat", sans-serif;
+            font-size: 3.1rem;
+            font-weight: 400; }
+          #skills .skills_wrap .main__offer_skill .skills_wrap__offer .skill_list .sk_head {
+            color: #ff1516;
+            font-family: "Montserrat", sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-top: 20px;
+            margin-bottom: 15px; }
+          #skills .skills_wrap .main__offer_skill .skills_wrap__offer .skill_list .sk_info {
+            color: #000000;
+            font-family: "Roboto", sans-serif;
+            font-size: 1.3rem;
+            font-weight: 400; }
+
+#reviews {
+  background: url(../img/ft_bg.png) no-repeat 50% 50%/cover;
+  padding-top: 80px;
+  padding-bottom: 70px; }
+  #reviews .slick-slider {
+    position: static; }
+  #reviews .review_wrap {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 30px 80px 40px 80px;
+    position: relative; }
+    #reviews .review_wrap h2 {
+      text-align: center;
+      color: #151a1f;
+      font-family: "Montserrat", sans-serif;
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-bottom: 30px; }
+    #reviews .review_wrap .offer_reviews {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      #reviews .review_wrap .offer_reviews .offer_reviews__list {
+        margin-right: 15px; }
+        #reviews .review_wrap .offer_reviews .offer_reviews__list:last-child {
+          margin-right: 0px; }
+        #reviews .review_wrap .offer_reviews .offer_reviews__list .rev_head {
+          color: #ff1516;
+          font-family: "Roboto", sans-serif;
+          font-weight: 700;
+          font-size: 1.3rem;
+          margin: 25px 0px; }
+        #reviews .review_wrap .offer_reviews .offer_reviews__list .rev_txt {
+          font-family: "Roboto", sans-serif;
+          font-weight: 400;
+          font-size: 1.3rem; }
+          #reviews .review_wrap .offer_reviews .offer_reviews__list .rev_txt span {
+            color: #ff1516;
+            cursor: pointer; }
+
+.fa.fa-chevron-right.slick-arrow, .fa.fa-chevron-left.slick-arrow {
+  color: #151a1f;
+  background: #fff;
+  position: absolute;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 15px;
+  cursor: pointer; }
+
+.fa.fa-chevron-right.slick-arrow {
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+.fa.fa-chevron-left.slick-arrow {
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
 
 /*# sourceMappingURL=style.css.map */
