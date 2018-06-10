@@ -1,10 +1,31 @@
+html {
+  font-size: 10px; }
+
 .section1_container {
   max-width: 955px;
   width: 90%;
   margin: 0 auto; }
   .section1_container .section1_menu {
-    list-style-type: none; }
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
     .section1_container .section1_menu li {
-      display: inline-block; }
-      .section1_container .section1_menu li .wrapper {
-        margin: 0 20px; }
+      color: #000000;
+      font-family: Roboto;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: -0.33px; }
+    .section1_container .section1_menu .wrapper {
+      display: block;
+      margin: 0px 7px; }
+  .section1_container h2 {
+    color: #151a1f;
+    font-family: "Montserrat - Black";
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase; }
+    .section1_container h2 span {
+      color: #ff1516; }
