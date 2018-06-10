@@ -6,4 +6,11 @@ $(function(){
         prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>',
         nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>'
 	});
+	$('.trust_wrapp').slick({
+		slidesToShow: 5,
+  		slidesToScroll: 1,
+  		arrows: true,
+        prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>',
+        nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>'
+	});
 });
