@@ -13,38 +13,68 @@ $(function(){
         prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>',
         nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>'
 	});
-	if($(window).width() > 1024)
-{
 
-   $('body').parallax({
+// if($(window).width() > 1024)
+// {
 
-      'elements': [
-        {
-          'selector': '.paralax_block',
-          'properties': {
-            'x': {
-              'right': {
-                'initial': 150,
-                'multiplier': 0.04,
-                'unit': 'px',
-                'invert': false
-              }
-            },
-            'y': {
-              'top': {
-                'initial': 54,
-                'multiplier': 0.02,
-                'unit': 'px',
-                'invert': false
-              }
-            }
-          }
-        }
-      ]
-    });
+//    $('body').parallax({
 
-} else {
-   // change functionality for larger screens
-}
+//       'elements': [
+//         {
+//           'selector': '.paralax_block',
+//           'properties': {
+//             'x': {
+//               'right': {
+//                 'initial': 54,
+//                 'multiplier': 0.02,
+//                 'unit': 'px',
+//                 'invert': false
+//               }
+//             },
+//             'y': {
+//               'top': {
+//                 'initial': 54,
+//                 'multiplier': 0.04,
+//                 'unit': 'px',
+//                 'invert': false
+//               }
+//             }
+//           }
+//         }
+//       ]
+//     });
 
+// } else {
+//    // change functionality for larger screens
+// }
+// $(window).scroll(function() {
+// 	$('.paralax_block').each(function(){
+// 		var $bgobj = $(this);
+// 		$bgobj.css({ 'left': '1%' });
+// 	});
+// });
 });
+// $(document).ready(function(){
+// 	// Кешируем объект окна
+// 	$window = $(window);
+                
+//    $('.paralax_block').each(function(){
+//      var $bgobj = $(this); // Назначаем объект
+                    
+//       $(window).scroll(function() {
+                    
+// 		// Прокручиваем фон со скоростью var.
+// 		// Значение yPos отрицательное, так как прокручивание осуществляется вверх!
+// 		var yPos = ($window.scrollTop() / $bgobj.data(900)); 
+		
+// 		// Размещаем все вместе в конечной точке
+// 		var coords = '50% '+ yPos + 'px';
+
+// 		// Смещаем фон
+// 		$bgobj.css({ left: coords });
+		
+// 	}); 
+
+//  });	
+
+// }); 
