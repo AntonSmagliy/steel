@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/montserratlight.woff2") format("woff2"), url("../fonts/montserratlight.woff") format("woff"), url("../fonts/montserratlight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/montserrat.woff2") format("woff2"), url("../fonts/montserrat.woff") format("woff"), url("../fonts/montserrat.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/montserratbold.woff2") format("woff2"), url("../fonts/montserratbold.woff") format("woff"), url("../fonts/montserratbold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/montserratblack.woff2") format("woff2"), url("../fonts/montserratblack.woff") format("woff"), url("../fonts/montserratblack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto.woff2") format("woff2"), url("../fonts/Roboto.woff") format("woff"), url("../fonts/Roboto.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Robotoitalic.woff2") format("woff2"), url("../fonts/Robotoitalic.woff") format("woff"), url("../fonts/Robotoitalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Robotomedium.woff2") format("woff2"), url("../fonts/Robotomedium.woff") format("woff"), url("../fonts/Robotomedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Robotobold.woff2") format("woff2"), url("../fonts/Robotobold.woff") format("woff"), url("../fonts/Robotobold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Robotoblack.woff2") format("woff2"), url("../fonts/Robotoblack.woff") format("woff"), url("../fonts/Robotoblack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* line 56, /home/vinnope/workspace/steel/sass/style.sass */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 61, /home/vinnope/workspace/steel/sass/style.sass */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 65, /home/vinnope/workspace/steel/sass/style.sass */
+header .logo {
+  background: #151a1f;
+}
+
+/* line 69, /home/vinnope/workspace/steel/sass/style.sass */
+header nav ul li {
+  float: left;
+}
+
+/* line 71, /home/vinnope/workspace/steel/sass/style.sass */
+header nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #151a1f;
+  font-family: 'Roboto';
+  font-weight: 700;
+}
+
+/* line 77, /home/vinnope/workspace/steel/sass/style.sass */
+header .feedback {
+  display: flex;
+  align-items: center;
+}
+
+/* line 81, /home/vinnope/workspace/steel/sass/style.sass */
+header .feedback .numbers .phone_img {
+  float: left;
+}
+
+/* line 83, /home/vinnope/workspace/steel/sass/style.sass */
+header .feedback .numbers .phones_number {
+  float: left;
+}
+
+/* line 85, /home/vinnope/workspace/steel/sass/style.sass */
+header .feedback .numbers .phones_number a {
+  display: block;
+}
+
+/*# sourceMappingURL=../css/style.map */
