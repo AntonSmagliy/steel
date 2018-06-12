@@ -1,70 +1,628 @@
-/*
-Error: Invalid property: "line-height:" (no value).
-        on line 372 of C:\Users\mazho\Desktop\stal\steel\sass\main.sass
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/montserratlight.woff2") format("woff2"), url("../fonts/montserratlight.woff") format("woff"), url("../fonts/montserratlight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
 
-367:               line-height: 18px
-368:         p
-369:           font-family: "Roboto", sans-serif
-370:           font-weight: 400
-371:           letter-spacing: -0.33px
-372:           line-height: 
-373:           margin-bottom: 20px
-374:         small 
-375:           font-family: "Roboto", sans-serif
-376:           font-weight: 400
-377:           letter-spacing: -0.33px
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/montserrat.woff2") format("woff2"), url("../fonts/montserrat.woff") format("woff"), url("../fonts/montserrat.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
 
-Backtrace:
-C:\Users\mazho\Desktop\stal\steel\sass\main.sass:372
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:759:in `parse_property'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:708:in `parse_property_or_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:667:in `parse_line'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:540:in `build_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:559:in `block in append_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `each'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `append_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:549:in `block in build_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:542:in `each'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:542:in `build_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:559:in `block in append_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `each'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `append_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:549:in `block in build_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:542:in `each'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:542:in `build_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:559:in `block in append_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `each'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `append_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:549:in `block in build_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:542:in `each'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:542:in `build_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:559:in `block in append_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `each'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `append_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:549:in `block in build_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:542:in `each'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:542:in `build_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:559:in `block in append_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `each'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `append_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:549:in `block in build_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:542:in `each'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:542:in `build_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:559:in `block in append_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `each'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `append_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:417:in `_to_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:22:in `load'
-C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid property: \"line-height:\" (no value).\A         on line 372 of C:\Users\mazho\Desktop\stal\steel\sass\main.sass\A \A 367:               line-height: 18px\A 368:         p\A 369:           font-family: \"Roboto\", sans-serif\A 370:           font-weight: 400\A 371:           letter-spacing: -0.33px\A 372:           line-height: \A 373:           margin-bottom: 20px\A 374:         small \A 375:           font-family: \"Roboto\", sans-serif\A 376:           font-weight: 400\A 377:           letter-spacing: -0.33px"; }
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/montserratbold.woff2") format("woff2"), url("../fonts/montserratbold.woff") format("woff"), url("../fonts/montserratbold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/montserratblack.woff2") format("woff2"), url("../fonts/montserratblack.woff") format("woff"), url("../fonts/montserratblack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto.woff2") format("woff2"), url("../fonts/Roboto.woff") format("woff"), url("../fonts/Roboto.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Robotoitalic.woff2") format("woff2"), url("../fonts/Robotoitalic.woff") format("woff"), url("../fonts/Robotoitalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Robotomedium.woff2") format("woff2"), url("../fonts/Robotomedium.woff") format("woff"), url("../fonts/Robotomedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Robotobold.woff2") format("woff2"), url("../fonts/Robotobold.woff") format("woff"), url("../fonts/Robotobold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Robotoblack.woff2") format("woff2"), url("../fonts/Robotoblack.woff") format("woff"), url("../fonts/Robotoblack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* line 55, /home/vinnope/workspace/steel/sass/main.sass */
+html {
+  font-size: 10px;
+}
+
+/* line 57, /home/vinnope/workspace/steel/sass/main.sass */
+body {
+  background-color: white !important;
+}
+
+/* line 59, /home/vinnope/workspace/steel/sass/main.sass */
+* {
+  box-sizing: border-box;
+}
+
+/* line 61, /home/vinnope/workspace/steel/sass/main.sass */
+.section1_container {
+  padding-top: 20px;
+  max-width: 955px;
+  width: 90%;
+  padding-bottom: 100px;
+  margin: 0 auto;
+}
+
+/* line 67, /home/vinnope/workspace/steel/sass/main.sass */
+.section1_container .section1_menu {
+  list-style-type: none;
+  display: flex;
+}
+
+/* line 70, /home/vinnope/workspace/steel/sass/main.sass */
+.section1_container .section1_menu li {
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.33px;
+}
+
+/* line 77, /home/vinnope/workspace/steel/sass/main.sass */
+.section1_container .section1_menu .active {
+  color: #ff1516;
+}
+
+/* line 79, /home/vinnope/workspace/steel/sass/main.sass */
+.section1_container .section1_menu .wrapper {
+  display: block;
+  margin: 0px 7px;
+}
+
+/* line 82, /home/vinnope/workspace/steel/sass/main.sass */
+.section1_container h2 {
+  color: #151a1f;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 900;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+/* line 91, /home/vinnope/workspace/steel/sass/main.sass */
+.section1_container h2 span {
+  color: #ff1516;
+}
+
+/* line 93, /home/vinnope/workspace/steel/sass/main.sass */
+.section1_container p {
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.33px;
+  margin-bottom: 25px;
+}
+
+/* line 101, /home/vinnope/workspace/steel/sass/main.sass */
+.section1_container .whywe {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 105, /home/vinnope/workspace/steel/sass/main.sass */
+.section1_container .whywe .whywe__left .wrapper {
+  background-color: #f6f5f5;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-bottom: 30px;
+  padding-right: 55px;
+}
+
+/* line 111, /home/vinnope/workspace/steel/sass/main.sass */
+.section1_container .whywe .whywe__left .wrapper .list_item {
+  display: flex;
+  height: 55px;
+}
+
+/* line 114, /home/vinnope/workspace/steel/sass/main.sass */
+.section1_container .whywe .whywe__left .wrapper .list_item img {
+  width: 35px;
+  height: 35px;
+  margin-right: 20px;
+}
+
+/* line 118, /home/vinnope/workspace/steel/sass/main.sass */
+.section1_container .whywe .whywe__left .wrapper .list_item p {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: -0.45px;
+}
+
+/* line 125, /home/vinnope/workspace/steel/sass/main.sass */
+.section1_container .whywe .whywe__left .wrapper .list_item p span {
+  color: #ff1516;
+}
+
+/* line 128, /home/vinnope/workspace/steel/sass/main.sass */
+.section1_container .whywe .whywe__right h2 {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.6px;
+}
+
+/* line 136, /home/vinnope/workspace/steel/sass/main.sass */
+.section1_container .whywe .whywe__right .wrapper .feedback_form {
+  display: flex;
+}
+
+/* line 138, /home/vinnope/workspace/steel/sass/main.sass */
+.section1_container .whywe .whywe__right .wrapper .feedback_form .feedback_form_left {
+  border: 3px solid #a4b7c8;
+  border-right: none;
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-right: 25px;
+}
+
+/* line 144, /home/vinnope/workspace/steel/sass/main.sass */
+.section1_container .whywe .whywe__right .wrapper .feedback_form .feedback_form_left p {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.33px;
+  width: 246px;
+  margin-bottom: 15px;
+}
+
+/* line 152, /home/vinnope/workspace/steel/sass/main.sass */
+.section1_container .whywe .whywe__right .wrapper .feedback_form .feedback_form_left form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 155, /home/vinnope/workspace/steel/sass/main.sass */
+.section1_container .whywe .whywe__right .wrapper .feedback_form .feedback_form_left form input {
+  display: block;
+  width: 257px;
+  height: 52px;
+  padding-left: 10px;
+  font-size: 20px;
+  margin-top: 7px;
+}
+
+/* line 162, /home/vinnope/workspace/steel/sass/main.sass */
+.section1_container .whywe .whywe__right .wrapper .feedback_form .feedback_form_left form input[type="submit"] {
+  background-color: #ff1516;
+  border: none;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+/* line 167, /home/vinnope/workspace/steel/sass/main.sass */
+.section1_container .whywe .whywe__right .wrapper .feedback_form .feedback_form_right {
+  background-color: #a4b7c8;
+}
+
+/* line 169, /home/vinnope/workspace/steel/sass/main.sass */
+.section1_container .whywe .whywe__right .wrapper .feedback_form .feedback_form_right img {
+  width: 285px;
+  height: 268px;
+}
+
+/* line 172, /home/vinnope/workspace/steel/sass/main.sass */
+.section2 {
+  margin-top: 50px;
+  padding-top: 20px;
+  background-color: #f6f5f5;
+}
+
+/* line 177, /home/vinnope/workspace/steel/sass/main.sass */
+.section2 .examples .examples_container {
+  max-width: 955px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* line 181, /home/vinnope/workspace/steel/sass/main.sass */
+.section2 .examples .examples_container h2 {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* line 190, /home/vinnope/workspace/steel/sass/main.sass */
+.section2 .examples .examples_container .examples_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* line 194, /home/vinnope/workspace/steel/sass/main.sass */
+.section2 .examples .examples_container .examples_list .examples_list_item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+/* line 203, /home/vinnope/workspace/steel/sass/main.sass */
+.section2 .examples .examples_container .examples_list .examples_list_item p {
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  width: 70%;
+  text-align: left;
+  padding-left: 10px;
+}
+
+/* line 212, /home/vinnope/workspace/steel/sass/main.sass */
+.section2 .examples .examples_container .examples_list .examples_list_item .wrapper {
+  position: relative;
+}
+
+/* line 214, /home/vinnope/workspace/steel/sass/main.sass */
+.section2 .examples .examples_container .examples_list .examples_list_item .wrapper:hover a {
+  display: flex;
+}
+
+/* line 216, /home/vinnope/workspace/steel/sass/main.sass */
+.section2 .examples .examples_container .examples_list .examples_list_item .wrapper a {
+  position: absolute;
+  display: none;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 97%;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  opacity: 0.46;
+  transition: 0.2s;
+}
+
+/* line 228, /home/vinnope/workspace/steel/sass/main.sass */
+.section2 .examples .examples_container .gotoportfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #c6c6c6;
+  background-color: #f6f5f5;
+  cursor: pointer;
+  width: 257px;
+  margin-left: auto;
+}
+
+/* line 237, /home/vinnope/workspace/steel/sass/main.sass */
+.section2 .examples .examples_container .gotoportfolio p {
+  color: #ff1516;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 11.96px;
+  letter-spacing: -0.9px;
+  margin: 12px 0px;
+}
+
+/* line 245, /home/vinnope/workspace/steel/sass/main.sass */
+.section2 .examples .examples_container .gotoportfolio img {
+  margin: 13px 0px;
+  margin-left: 11px;
+}
+
+/* line 248, /home/vinnope/workspace/steel/sass/main.sass */
+.section3 {
+  background-color: #f6f5f5;
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 90px;
+}
+
+/* line 253, /home/vinnope/workspace/steel/sass/main.sass */
+.section3 .section3_left {
+  width: 50%;
+  background-color: #ffffff;
+}
+
+/* line 256, /home/vinnope/workspace/steel/sass/main.sass */
+.section3 .section3_left .wrapper {
+  width: 470px;
+  margin-left: auto;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-right: 30px;
+}
+
+/* line 262, /home/vinnope/workspace/steel/sass/main.sass */
+.section3 .section3_left .wrapper h2 {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.6px;
+  margin-bottom: 23px;
+}
+
+/* line 270, /home/vinnope/workspace/steel/sass/main.sass */
+.section3 .section3_left .wrapper p {
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.33px;
+  margin-bottom: 35px;
+}
+
+/* line 279, /home/vinnope/workspace/steel/sass/main.sass */
+.section3 .section3_left .wrapper ul li {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: -0.45px;
+  list-style-image: url(../img/red_dot.png);
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+/* line 289, /home/vinnope/workspace/steel/sass/main.sass */
+.section3 .section3_right {
+  padding-left: 35px;
+  padding-top: 30px;
+}
+
+/* line 292, /home/vinnope/workspace/steel/sass/main.sass */
+.section3 .section3_right h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.6px;
+  margin-bottom: 22px;
+}
+
+/* line 299, /home/vinnope/workspace/steel/sass/main.sass */
+.section3 .section3_right img {
+  cursor: pointer;
+}
+
+/* line 302, /home/vinnope/workspace/steel/sass/main.sass */
+.section4 .section4_container {
+  max-width: 600px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* line 306, /home/vinnope/workspace/steel/sass/main.sass */
+.section4 .section4_container h2 {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* line 316, /home/vinnope/workspace/steel/sass/main.sass */
+.section4 .section4_container .list_type {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* line 320, /home/vinnope/workspace/steel/sass/main.sass */
+.section4 .section4_container .list_type .list_type_item {
+  margin-top: 6px;
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  width: 178px;
+  height: 37px;
+  background-color: #ff1516;
+  cursor: pointer;
+}
+
+/* line 329, /home/vinnope/workspace/steel/sass/main.sass */
+.section4 .section4_container .list_type .list_type_item p {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 43px;
+  margin-left: 15px;
+}
+
+/* line 337, /home/vinnope/workspace/steel/sass/main.sass */
+.section5 .section5_container {
+  max-width: 955px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* line 341, /home/vinnope/workspace/steel/sass/main.sass */
+.section5 .section5_container .ver_line {
+  margin-top: 45px;
+  margin-bottom: 40px;
+}
+
+/* line 344, /home/vinnope/workspace/steel/sass/main.sass */
+.section5 .section5_container .section5_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 347, /home/vinnope/workspace/steel/sass/main.sass */
+.section5 .section5_container .section5_content .lesnitca {
+  width: 418px;
+  height: 314px;
+}
+
+/* line 350, /home/vinnope/workspace/steel/sass/main.sass */
+.section5 .section5_container .section5_content .wrapper {
+  font-size: 13px;
+  padding-left: 20px;
+}
+
+/* line 353, /home/vinnope/workspace/steel/sass/main.sass */
+.section5 .section5_container .section5_content .wrapper h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  line-height: 16px;
+  margin-bottom: 20px;
+}
+
+/* line 360, /home/vinnope/workspace/steel/sass/main.sass */
+.section5 .section5_container .section5_content .wrapper ul {
+  margin-bottom: 20px;
+}
+
+/* line 362, /home/vinnope/workspace/steel/sass/main.sass */
+.section5 .section5_container .section5_content .wrapper ul li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.33px;
+  line-height: 18px;
+  list-style-image: url(../img/red_dot.png);
+  margin-left: 15px;
+}
+
+/* line 369, /home/vinnope/workspace/steel/sass/main.sass */
+.section5 .section5_container .section5_content .wrapper ul li span {
+  color: #ff1516;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.33px;
+  line-height: 18px;
+}
+
+/* line 375, /home/vinnope/workspace/steel/sass/main.sass */
+.section5 .section5_container .section5_content .wrapper p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.33px;
+  margin-bottom: 20px;
+}
+
+/* line 381, /home/vinnope/workspace/steel/sass/main.sass */
+.section5 .section5_container .section5_content .wrapper small {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.33px;
+  line-height: 18px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* line 389, /home/vinnope/workspace/steel/sass/main.sass */
+.section5 .section5_container .section5_content .wrapper .standarts li {
+  list-style-type: disc !important;
+  list-style-image: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.33px;
+  line-height: 18px;
+  margin-bottom: 4px;
+  margin-left: 15px;
+}
+
+/* line 398, /home/vinnope/workspace/steel/sass/main.sass */
+#second .main_bg {
+  padding: 0px;
+  padding-right: 120px;
+  background-position-y: 0;
+}
+
+/* line 402, /home/vinnope/workspace/steel/sass/main.sass */
+#second .main_bg h2 {
+  padding-left: 70px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 43px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-top: 35px;
+  margin-bottom: 25px;
+}
+
+/* line 412, /home/vinnope/workspace/steel/sass/main.sass */
+#second .main_bg ul {
+  padding-left: 70px;
+  width: 100%;
+  display: block;
+  background-image: url(../img/red_grad.png);
+  background-size: 100% 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* line 420, /home/vinnope/workspace/steel/sass/main.sass */
+#second .main_bg ul li {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 5px;
+}
+
+/*# sourceMappingURL=../css/main.map */
