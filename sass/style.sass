@@ -64,7 +64,7 @@ html
 // img
 // 	max-width: 100%
 body
-	background:  #f6f5f5
+	background: #f6f5f5
 	position: relative
 	overflow-x: hidden
 	// background: url(../img/bg_abs.png) left -211px top calc(50% + 87px) / auto auto no-repeat fixed, #f6f5f5
@@ -88,6 +88,10 @@ header
 	justify-content: space-between
 	align-items: center
 	background: #fff
+	.head_mob
+		display: none
+		color: #000
+		
 	.logo
 		background: #151a1f
 		padding: 15px 35px
@@ -197,7 +201,7 @@ header
 	.main_bg
 		background: url(../img/header_bg.png) no-repeat 50% 50%/cover
 		margin-left: 240px
-		padding: 165px 0px
+		padding: 200px 0px
 		padding-left: 230px
 		position: relative
 		
@@ -207,7 +211,7 @@ header
 			font-size: 4.9rem
 			font-weight: 900
 			text-transform: uppercase
-			margin-bottom: 50px
+			margin-bottom: 60px
 		a
 			color: #fff
 			border: 2px solid #fff
@@ -217,6 +221,67 @@ header
 			font-family: 'Roboto'
 			font-size: 1.4rem
 			font-weight: 400
+	.fa.fa-chevron-right.slick-arrow, .fa.fa-chevron-left.slick-arrow
+		color: #151a1f
+		background: #fff
+		position: absolute
+		font-size: 2rem
+		font-weight: 500
+		padding: 15px
+		cursor: pointer
+		
+														
+	.fa.fa-chevron-right_r.slick-arrow
+		right: 0px
+		top: 35%
+		// transform: translateY(-50%)													
+	.fa.fa-chevron-right_l.slick-arrow
+		// left: 0
+		right: 0px
+		z-index: 99
+		top: 65%
+		// transform: translateY(-50%)
+	.wrap_slide
+		position: relative
+		// .fa.fa-chevron-right.slick-arrow
+		// 	right: 80px!important
+		// 	top: 60%
+		// 	// left: 100%
+		// 	left: none
+		// 	position: absolute
+			
+		// 	// transform: translateY(-50%)													
+		// .fa.fa-chevron-left.slick-arrow
+		// 	right: 80px!important
+		// 	// left: 100%
+		// 	top: 40%
+		// 	position: absolute
+
+			
+			// transform: translateY(-50%)
+		.offer_second
+			position: relative
+			.strl_slide
+				position: absolute
+				right: 80px
+				color: #ffffff
+				font-family: "Montserrat", sans-serif
+				font-size: 2.4rem
+				font-weight: 900
+				line-height: 24px
+				text-transform: uppercase
+				// top: 50%
+				&__fir
+					top: 35%
+					text-align: right
+					// left: 100%
+					
+				&__sec
+					top: 65%
+					// left: 100%
+					text-align: right
+				
+		
 
 #advertis
 	background: #fff
@@ -227,7 +292,7 @@ header
 	.advert_more
 		display: block
 		color: #fff
-		bottom: 0
+		bottom: -15px
 		background: #ff1516
 		padding: 8px 26px
 		font-family: 'Roboto'
@@ -352,6 +417,7 @@ header
 				line-height: 24px
 				margin-bottom: 25px
 				margin-top: 30px
+				height: 50px
 			.cap_pred
 				color: #000000
 				font-family: 'Montserrat', sans-serif
@@ -359,6 +425,7 @@ header
 				font-weight: 400
 				text-transform: uppercase
 				margin-bottom: 28px	
+				height: 30px
 			.cap_info
 				color: #000000
 				font-family: 'Roboto', sans-serif
@@ -422,6 +489,7 @@ header
 				cursor: pointer
 #projects
 	// border-bottom: 3px solid #ff1516
+	background: #f6f5f5
 	h2
 		color: #000000
 		font-family: 'Montserrat', sans-serif
@@ -574,24 +642,24 @@ header
 					span
 						color: #ff1516
 						cursor: pointer
-.fa.fa-chevron-right.slick-arrow, .fa.fa-chevron-left.slick-arrow
-	color: #151a1f
-	background: #fff
-	position: absolute
-	font-size: 2rem
-	font-weight: 500
-	padding: 15px
-	cursor: pointer
-	
-													
-.fa.fa-chevron-right.slick-arrow
-	right: 0
-	top: 50%
-	transform: translateY(-50%)													
-.fa.fa-chevron-left.slick-arrow
-	left: 0
-	top: 50%
-	transform: translateY(-50%)
+	.fa.fa-chevron-right.slick-arrow, .fa.fa-chevron-left.slick-arrow
+		color: #151a1f
+		background: #fff
+		position: absolute
+		font-size: 2rem
+		font-weight: 500
+		padding: 15px
+		cursor: pointer
+		
+														
+	.fa.fa-chevron-right.slick-arrow
+		right: 0
+		top: 50%
+		transform: translateY(-50%)													
+	.fa.fa-chevron-left.slick-arrow
+		left: 0
+		top: 50%
+		transform: translateY(-50%)
 #trust
 	background: #f6f5f5
 	padding: 60px 0px
@@ -628,6 +696,24 @@ header
 			// margin-right: 35px
 			// &:last-child
 				// margin-right: 0
+	.fa.fa-chevron-right.slick-arrow, .fa.fa-chevron-left.slick-arrow
+		color: #151a1f
+		background: #fff
+		position: absolute
+		font-size: 2rem
+		font-weight: 500
+		padding: 15px
+		cursor: pointer
+		
+														
+	.fa.fa-chevron-right.slick-arrow
+		right: 0
+		// top: 50%
+		// transform: translateY(-50%)													
+	.fa.fa-chevron-left.slick-arrow
+		left: 0
+		// top: 50%
+		// transform: translateY(-50%)
 footer
 	background: #151a1f
 	padding: 20px 0px 25px 0px
@@ -711,3 +797,225 @@ footer
 					font-family: 'Roboto', sans-serif
 					font-size: 1rem
 					font-weight: 400
+@media all and (max-width:1250px)
+	header
+		nav
+			ul
+				li
+					margin-right: 15px
+@media all and (max-width:1215px)
+	#second 
+		.main_bg
+			h1
+				font-size: 4.4rem
+		.wrap_slide 
+			.offer_second 
+				.strl_slide
+					font-size: 1.6rem
+@media all and (max-width:1170px)
+	header
+		nav 
+			ul 
+				li 
+					a
+						font-size: 1.1rem
+		.feedback 
+			.calendar 
+				p
+					font-size: 1.1rem
+				a
+					font-size: 1.1rem
+			.numbers 
+				.phones_number 
+					a
+						font-size: 1.4rem
+@media all and (max-width:1040px)
+	#second 
+		.wrap_slide 
+			.offer_second 
+				.strl_slide__fir
+					top: 20%
+			
+	#second 
+		.fa.fa-chevron-right_r.slick-arrow
+			right: 0px
+			top: 20%
+@media all and (max-width:1025px)	
+	header 
+		.feedback
+			flex-direction: column
+			.calendar
+				margin-right: 0
+@media all and (max-width:940px)
+	#application 
+		.applic_offer 
+			form 
+				input
+					margin-right: 12px
+					width: 230px
+@media all and (max-width:910px)
+	#second 
+		.slide_kart
+			top: 26%
+		.main_bg
+			margin-left: 0
+			padding-top: 300px
+			padding-bottom: 100px
+	#advertis
+		.advert_offer
+			flex-direction: column
+			align-items: center
+			.advert_offer__list
+				width: 75%
+				margin-bottom: 40px
+@media all and (max-width:890px)
+	header
+		.feedback
+			.numbers 
+				.phone_img
+					display: none
+@media all and (max-width:860px)
+	header 
+		.feedback 
+			.numbers 
+				.phones_number 
+					a
+						font-size: 1.2rem
+		nav
+			ul
+				li
+					margin-right: 10px	
+	#capabilities 
+		.capab_wrap__list 
+			.cap_pred
+				height: 40px
+			.cap_info
+				height: 80px			
+@media all and (max-width:815px)
+	header
+		nav
+			order: 2
+			ul
+				display: none
+			.head_mob
+				display: block
+				font-size: 3rem
+				margin-right: 10px
+		.feedback
+			order: 1
+			.numbers 
+				.phone_img
+					display: block
+	#second				
+		.fa.fa-chevron-right_l.slick-arrow
+			// left: 0
+			right: 0px
+			z-index: 99
+			top: 82%
+		.wrap_slide 
+			.offer_second 
+				.strl_slide__sec
+					top: 82%
+	#application 
+		.applic_offer 
+			form
+				flex-direction: column
+				input
+					margin-right: 0
+					margin-top: 20px
+@media all and (max-width:700px)
+	#capabilities 
+		.capab_wrap__list 
+			margin-bottom: 30px
+			width: 90%
+			text-align: center
+			a
+				margin: 10px auto
+			.cap_h
+				height: auto
+			.cap_pred
+				height: auto
+			.cap_info
+				height: auto
+	#capabilities 
+		.capab_wrap
+			flex-direction: column
+			align-items: center
+@media all and (max-width:670px)
+	#second 
+		.main_bg
+			padding-left: 50px
+		.slide_kart
+			padding: 15px 20px
+@media all and (max-width:545px)
+	#second
+		.wrap_slide 
+			.offer_second 
+				.strl_slide__fir
+					top: 72%
+		.fa.fa-chevron-right_r.slick-arrow
+			right: 0px
+			top: 72%
+	#advertis 
+		.advert_offer 
+			.advert_offer__list
+				width: 100%
+@media all and (max-width:465px)
+	header 
+		.feedback 
+			.calendar
+				display: none
+	#second 
+		.main_bg
+			padding-left: 15px
+			h1
+				font-size: 3.8rem
+				margin-bottom: 40px
+	#uslugi 
+		.uslug_wrap 
+			.uslug_wrap__list 
+				.usl_img
+					img
+						max-width: 100%
+@media all and (max-width:450px)
+	header
+		.feedback
+			.numbers 
+				.phone_img
+					display: none
+				.phones_number
+					border: 0
+					padding: 0
+@media all and (max-width:410px)
+	#second 
+		.main_bg
+			padding-top: 220px
+			padding-bottom: 170px
+	#second
+		.wrap_slide 
+			.offer_second 
+				.strl_slide__fir
+					top: 75%
+		.fa.fa-chevron-right_r.slick-arrow
+			right: 0px
+			top: 75%
+	#second				
+		.fa.fa-chevron-right_l.slick-arrow
+			// left: 0
+			// right: 0px
+			// z-index: 99
+			top: 87%
+		.wrap_slide 
+			.offer_second 
+				.strl_slide__sec
+					top: 87%
+@media all and (max-width:365px)
+	#second 
+		.main_bg 
+			h1
+				font-size: 2.9rem
+@media all and (max-width:390px)
+	header
+		.feedback
+			display: none
+											

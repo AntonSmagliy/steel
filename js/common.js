@@ -13,7 +13,13 @@ $(function(){
         prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>',
         nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>'
 	});
-
+	$('.wrap_slide').slick({
+		slidesToShow: 1,
+  		slidesToScroll: 1,
+  		arrows: true,
+        prevArrow: '<i class="fa fa-chevron-right fa-chevron-right_l" aria-hidden="true"></i>',
+        nextArrow: '<i class="fa fa-chevron-right fa-chevron-right_r" aria-hidden="true"></i>'
+	});
 // if($(window).width() > 1024)
 // {
 
