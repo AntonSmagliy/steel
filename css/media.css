@@ -1,151 +1,159 @@
 @media all and (max-width: 1100px) {
-  /* line 2, /home/vinnope/workspace/steel/sass/media.sass */
   .section5 .section5_container .ver_line {
-    width: 80%;
-  }
-  /* line 4, /home/vinnope/workspace/steel/sass/media.sass */
+    width: 80%; }
+
   .section5 .section5_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; } }
 @media all and (max-width: 950px) {
-  /* line 9, /home/vinnope/workspace/steel/sass/media.sass */
   .offer_reviews__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  /* line 13, /home/vinnope/workspace/steel/sass/media.sass */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+
   .whywe {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  /* line 17, /home/vinnope/workspace/steel/sass/media.sass */
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
   .section3 {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  /* line 22, /home/vinnope/workspace/steel/sass/media.sass */
-  .section3 li {
-    text-align: left;
-  }
-  /* line 24, /home/vinnope/workspace/steel/sass/media.sass */
-  .section3 .section3_left {
-    width: 100%;
-  }
-  /* line 26, /home/vinnope/workspace/steel/sass/media.sass */
-  .section3 .section3_left .wrapper {
-    margin: 0 auto;
-    padding: 0;
-  }
-  /* line 29, /home/vinnope/workspace/steel/sass/media.sass */
-  .section3 .section3_right {
-    padding: 0;
-  }
-  /* line 31, /home/vinnope/workspace/steel/sass/media.sass */
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center; }
+    .section3 li {
+      text-align: left; }
+    .section3 .section3_left {
+      width: 100%; }
+      .section3 .section3_left .wrapper {
+        margin: 0 auto;
+        padding: 0; }
+    .section3 .section3_right {
+      padding: 0; }
+
   .section5 .section5_container .section5_content {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  /* line 35, /home/vinnope/workspace/steel/sass/media.sass */
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
   .section5 .section5_container .section5_content .wrapper h2 {
-    margin-top: 30px;
-  }
-}
-
+    margin-top: 30px; } }
 @media all and (max-width: 800px) {
-  /* line 38, /home/vinnope/workspace/steel/sass/media.sass */
   footer .foot_wrap {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; } }
 @media all and (max-width: 600px) {
-  /* line 42, /home/vinnope/workspace/steel/sass/media.sass */
   #second .main_bg h2 {
-    font-size: 20px;
-  }
-  /* line 44, /home/vinnope/workspace/steel/sass/media.sass */
-  #second .main_bg ul li {
-    font-size: 12px;
-  }
-  /* line 46, /home/vinnope/workspace/steel/sass/media.sass */
-  #second .main_bg ul {
-    padding-left: 10px;
-  }
-  /* line 48, /home/vinnope/workspace/steel/sass/media.sass */
-  .feedback_form {
-    flex-direction: column;
-  }
-  /* line 50, /home/vinnope/workspace/steel/sass/media.sass */
-  .feedback_form .feedback_form_left {
-    border-right: 3px solid #a4b7c8 !important;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  /* line 55, /home/vinnope/workspace/steel/sass/media.sass */
-  .section1_container .whywe .whywe__right h2 {
-    font-size: 17px;
-  }
-  /* line 57, /home/vinnope/workspace/steel/sass/media.sass */
-  .section1_container h2 {
-    font-size: 17px;
-  }
-  /* line 59, /home/vinnope/workspace/steel/sass/media.sass */
-  .section1_container .section1_menu {
-    display: block;
-  }
-  /* line 61, /home/vinnope/workspace/steel/sass/media.sass */
-  .section1_container .section1_menu li.wrapper {
-    display: none !important;
-  }
-  /* line 63, /home/vinnope/workspace/steel/sass/media.sass */
-  .section2 .examples .examples_container .examples_list {
-    justify-content: center;
-  }
-  /* line 65, /home/vinnope/workspace/steel/sass/media.sass */
-  .section3 .section3_left .wrapper h2 {
-    font-size: 20px;
-  }
-  /* line 67, /home/vinnope/workspace/steel/sass/media.sass */
-  .section3 .section3_left .wrapper p {
-    font-size: 11px;
-  }
-  /* line 69, /home/vinnope/workspace/steel/sass/media.sass */
-  .section3 .section3_left .wrapper ul li {
-    font-size: 14px;
-  }
-  /* line 71, /home/vinnope/workspace/steel/sass/media.sass */
-  .section3 .section3_left .wrapper {
-    width: auto;
-  }
-  /* line 73, /home/vinnope/workspace/steel/sass/media.sass */
-  .section3 .section3_right img {
-    width: 80%;
-  }
-  /* line 75, /home/vinnope/workspace/steel/sass/media.sass */
-  .section4 .section4_container .list_type {
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-}
+    font-size: 20px; }
 
+  #second .main_bg ul li {
+    font-size: 12px; }
+
+  #second .main_bg ul {
+    padding-left: 10px; }
+
+  .feedback_form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .feedback_form .feedback_form_left {
+      border-right: 3px solid #a4b7c8 !important;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+
+  .section1_container .whywe .whywe__right h2 {
+    font-size: 17px; }
+
+  .section1_container h2 {
+    font-size: 17px; }
+
+  .section1_container .section1_menu {
+    display: block; }
+
+  .section2 .examples .examples_container .examples_list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+  .section3 .section3_left .wrapper h2 {
+    font-size: 20px; }
+
+  .section3 .section3_left .wrapper p {
+    font-size: 11px; }
+
+  .section3 .section3_left .wrapper ul li {
+    font-size: 14px; }
+
+  .section3 .section3_left .wrapper {
+    width: auto; }
+
+  .section3 .section3_right img {
+    width: 80%; }
+
+  .section4 .section4_container .list_type {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; } }
 @media all and (max-width: 430px) {
-  /* line 80, /home/vinnope/workspace/steel/sass/media.sass */
   .section5 .section5_container .section5_content .lesnitca {
     width: 320px;
-    height: 216px;
-  }
-}
+    height: 216px; } }
 
-/*# sourceMappingURL=../css/media.map */
+/*# sourceMappingURL=media.css.map */
