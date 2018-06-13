@@ -538,7 +538,8 @@ header {
         #skills .skills_wrap .main__offer_skill .skills_wrap__offer img {
           max-width: 100%; }
         #skills .skills_wrap .main__offer_skill .skills_wrap__offer .skill_list {
-          margin-top: 50px; }
+          margin-top: 50px;
+          height: 225px; }
           #skills .skills_wrap .main__offer_skill .skills_wrap__offer .skill_list ul {
             margin-left: 20px;
             list-style-image: url(../img/kk.png); }
@@ -831,6 +832,9 @@ footer {
     height: 40px; }
   #capabilities .capab_wrap__list .cap_info {
     height: 80px; } }
+@media all and (max-width: 835px) {
+  #skills .skills_wrap .main__offer_skill .skills_wrap__offer .skill_list {
+    height: auto; } }
 @media all and (max-width: 815px) {
   header nav {
     -webkit-box-ordinal-group: 3;
@@ -864,6 +868,17 @@ footer {
     #application .applic_offer form input {
       margin-right: 0;
       margin-top: 20px; } }
+@media all and (max-width: 800px) {
+  #skills .skills_wrap .main__offer_skill {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    #skills .skills_wrap .main__offer_skill .skills_wrap__offer {
+      width: 100%;
+      text-align: left; }
+      #skills .skills_wrap .main__offer_skill .skills_wrap__offer .skill_list {
+        text-align: left !important; } }
 @media all and (max-width: 700px) {
   #capabilities .capab_wrap__list {
     margin-bottom: 30px;

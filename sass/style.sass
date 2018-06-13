@@ -576,6 +576,7 @@ header
 					max-width: 100%
 				.skill_list
 					margin-top: 50px
+					height: 225px
 					ul
 						margin-left: 20px
 						// list-style: none
@@ -890,7 +891,14 @@ footer
 			.cap_pred
 				height: 40px
 			.cap_info
-				height: 80px			
+				height: 80px
+@media all and (max-width:835px)
+	#skills 
+		.skills_wrap 
+			.main__offer_skill 
+				.skills_wrap__offer 
+					.skill_list
+						height: auto		
 @media all and (max-width:815px)
 	header
 		nav
@@ -923,6 +931,18 @@ footer
 				input
 					margin-right: 0
 					margin-top: 20px
+@media all and (max-width:800px)
+	#skills 
+		.skills_wrap 
+			.main__offer_skill 
+				flex-direction: column
+				.skills_wrap__offer
+					width: 100%
+					text-align: left
+					.skill_list
+						text-align: left!important
+						
+					
 @media all and (max-width:700px)
 	#capabilities 
 		.capab_wrap__list 
