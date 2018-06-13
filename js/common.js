@@ -11,15 +11,17 @@ $(function(){
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
-        infinite: true,
+        // centerMode: true,
+        infinite: true
       }
     },
     {
       breakpoint: 670,
       settings: {
         slidesToShow: 1,
+        // centerMode: true,
         slidesToScroll: 1,
-        infinite: true,
+        infinite: true
       }
     }
     ]
@@ -36,31 +38,31 @@ $(function(){
         settings: {
           slidesToShow: 4,
           slidesToScroll: 1,
-          infinite: true,
+          infinite: true
         }
       },
       {
-        breakpoint: 850,
+        breakpoint: 950,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          infinite: true,
+          infinite: true
         }
       },
       {
-        breakpoint: 650,
+        breakpoint: 760,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          infinite: true,
+          infinite: true
         }
       },
       {
-        breakpoint: 450,
+        breakpoint: 500,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          infinite: true,
+          infinite: true
         }
       },
       ]

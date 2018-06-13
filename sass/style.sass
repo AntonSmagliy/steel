@@ -689,12 +689,19 @@ header
 	.trust_wrapp
 		display: flex
 		justify-content: center
-		padding-left: 55px
+		// padding-left: 55px
 		// padding-right: 50px
-		// position: relative
+		position: relative
 		
 		&__list
-			// margin-right: 35px
+			text-align: center
+			margin: 0 auto
+			
+			img
+				text-align: center
+				margin: 0 auto
+				
+				// width: 128px
 			// &:last-child
 				// margin-right: 0
 	.fa.fa-chevron-right.slick-arrow, .fa.fa-chevron-left.slick-arrow
@@ -704,17 +711,16 @@ header
 		font-size: 2rem
 		font-weight: 500
 		padding: 15px
-		cursor: pointer
-		
-														
+		cursor: pointer													
 	.fa.fa-chevron-right.slick-arrow
-		right: 0
-		// top: 50%
-		// transform: translateY(-50%)													
+		right: -20px
+		top: 50%
+		transform: translateY(-50%)													
 	.fa.fa-chevron-left.slick-arrow
-		left: 0
-		// top: 50%
-		// transform: translateY(-50%)
+		left: -20px
+		z-index: 9999
+		top: 50%
+		transform: translateY(-50%)
 footer
 	background: #151a1f
 	padding: 20px 0px 25px 0px
@@ -869,6 +875,16 @@ footer
 			.advert_offer__list
 				width: 75%
 				margin-bottom: 40px
+@media all and (max-width:900px)
+	#reviews
+		.review_wrap
+			.offer_reviews 
+				.offer_reviews__list
+					text-align: center
+					.review_img
+						img
+							margin: 0 auto
+
 @media all and (max-width:890px)
 	header
 		.feedback
@@ -967,6 +983,18 @@ footer
 			padding-left: 50px
 		.slide_kart
 			padding: 15px 20px
+@media all and (max-width:610px)
+	footer
+		.foot_wrap
+			flex-wrap: wrap
+			.foot_wrap__list
+				width: auto
+			.foot_wrap__conts
+				width: auto
+				margin-top: 20px
+				margin-bottom: 20px
+			.foot_wrap__fb
+				width: auto
 @media all and (max-width:545px)
 	#second
 		.wrap_slide 
@@ -1029,6 +1057,9 @@ footer
 			.offer_second 
 				.strl_slide__sec
 					top: 87%
+	#reviews 
+		.review_wrap
+			padding: 30px 40px 40px 45px
 @media all and (max-width:365px)
 	#second 
 		.main_bg 

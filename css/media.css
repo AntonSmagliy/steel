@@ -3,52 +3,19 @@
     width: 80%; }
 
   .section5 .section5_container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; } }
+    flex-direction: column;
+    align-items: center; } }
 @media all and (max-width: 950px) {
-  .offer_reviews__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-
   .whywe {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
 
   .section3 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center; }
     .section3 li {
       text-align: left; }
@@ -61,28 +28,12 @@
       padding: 0; }
 
   .section5 .section5_container .section5_content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
 
   .section5 .section5_container .section5_content .wrapper h2 {
     margin-top: 30px; } }
-@media all and (max-width: 800px) {
-  footer .foot_wrap {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; } }
 @media all and (max-width: 600px) {
   #second .main_bg h2 {
     font-size: 20px; }
@@ -94,22 +45,12 @@
     padding-left: 10px; }
 
   .feedback_form {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
+    flex-direction: column; }
     .feedback_form .feedback_form_left {
       border-right: 3px solid #a4b7c8 !important;
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
+      flex-direction: column;
+      align-items: center; }
 
   .section1_container .whywe .whywe__right h2 {
     font-size: 17px; }
@@ -121,9 +62,7 @@
     display: block; }
 
   .section2 .examples .examples_container .examples_list {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+    justify-content: center; }
 
   .section3 .section3_left .wrapper h2 {
     font-size: 20px; }
@@ -141,19 +80,15 @@
     width: 80%; }
 
   .section4 .section4_container .list_type {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; } }
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; } }
 @media all and (max-width: 430px) {
   .section5 .section5_container .section5_content .lesnitca {
     width: 320px;
-    height: 216px; } }
+    height: 216px; }
+
+  #second .main_bg h2 {
+    padding-left: 25px; } }
 
 /*# sourceMappingURL=media.css.map */

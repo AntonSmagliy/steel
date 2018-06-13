@@ -654,7 +654,13 @@ header {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-left: 55px; }
+    position: relative; }
+    #trust .trust_wrapp__list {
+      text-align: center;
+      margin: 0 auto; }
+      #trust .trust_wrapp__list img {
+        text-align: center;
+        margin: 0 auto; }
   #trust .fa.fa-chevron-right.slick-arrow, #trust .fa.fa-chevron-left.slick-arrow {
     color: #151a1f;
     background: #fff;
@@ -664,9 +670,16 @@ header {
     padding: 15px;
     cursor: pointer; }
   #trust .fa.fa-chevron-right.slick-arrow {
-    right: 0; }
+    right: -20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
   #trust .fa.fa-chevron-left.slick-arrow {
-    left: 0; }
+    left: -20px;
+    z-index: 9999;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
 
 footer {
   background: #151a1f;
@@ -819,6 +832,11 @@ footer {
     #advertis .advert_offer .advert_offer__list {
       width: 75%;
       margin-bottom: 40px; } }
+@media all and (max-width: 900px) {
+  #reviews .review_wrap .offer_reviews .offer_reviews__list {
+    text-align: center; }
+    #reviews .review_wrap .offer_reviews .offer_reviews__list .review_img img {
+      margin: 0 auto; } }
 @media all and (max-width: 890px) {
   header .feedback .numbers .phone_img {
     display: none; } }
@@ -906,6 +924,18 @@ footer {
     padding-left: 50px; }
   #second .slide_kart {
     padding: 15px 20px; } }
+@media all and (max-width: 610px) {
+  footer .foot_wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    footer .foot_wrap .foot_wrap__list {
+      width: auto; }
+    footer .foot_wrap .foot_wrap__conts {
+      width: auto;
+      margin-top: 20px;
+      margin-bottom: 20px; }
+    footer .foot_wrap .foot_wrap__fb {
+      width: auto; } }
 @media all and (max-width: 545px) {
   #second .wrap_slide .offer_second .strl_slide__fir {
     top: 72%; }
@@ -947,7 +977,10 @@ footer {
   #second .fa.fa-chevron-right_l.slick-arrow {
     top: 87%; }
   #second .wrap_slide .offer_second .strl_slide__sec {
-    top: 87%; } }
+    top: 87%; }
+
+  #reviews .review_wrap {
+    padding: 30px 40px 40px 45px; } }
 @media all and (max-width: 365px) {
   #second .main_bg h1 {
     font-size: 2.9rem; } }
