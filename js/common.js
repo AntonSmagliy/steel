@@ -1,17 +1,69 @@
 $(function(){
 	$('.offer_reviews').slick({
 		slidesToShow: 3,
-  		slidesToScroll: 1,
-  		arrows: true,
-        prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>',
-        nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>'
+		slidesToScroll: 1,
+		arrows: true,
+      prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>',
+      nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
+    responsive: [
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+      }
+    },
+    {
+      breakpoint: 670,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+      }
+    }
+    ]
 	});
 	$('.trust_wrapp').slick({
 		slidesToShow: 5,
   		slidesToScroll: 1,
   		arrows: true,
         prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>',
-        nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>'
+        nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
+      responsive: [
+      {
+        breakpoint: 1050,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 850,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 650,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 450,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+        }
+      },
+      ]
 	});
 	$('.wrap_slide').slick({
 		slidesToShow: 1,
