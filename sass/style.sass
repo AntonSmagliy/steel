@@ -357,6 +357,7 @@ header
 		justify-content: center
 		flex-wrap: wrap
 		.uslug_wrap__list
+			display: block
 			padding: 15px 15px 20px 15px
 			text-align: center
 			background: #fff
@@ -1074,28 +1075,29 @@ footer
 		.feedback
 			display: none
 #overlay
-  width: 100%
-  height: 100%
-  position: fixed
-  top: 0
-  left: 0
-  background-color: black
-  opacity: 0.6
-  z-index: 99999999
-  justify-content: center
-  align-items: center
-  display: none
+	width: 100%
+	height: 100%
+	position: fixed
+	top: 0
+	left: 0
+	background-color: black
+	opacity: 0.8
+	z-index: 99999999
+	justify-content: center
+	align-items: center
+	display: none
 .menu_active_burger
-  display: flex
-  flex-direction: column
-  align-items: center
-  position: absolute
-  top: 50px
-  left: 50%
-  z-index: 999999999999999999
-  transform: translateX(-50%);
-  li
-    a
-      color: white
-      z-index: 999999999999999999
-    
+	display: flex
+	flex-direction: column
+	align-items: center
+	position: absolute
+	top: 50px
+	left: 50%
+	z-index: 999999999999999999
+	transform: translateX(-50%)
+	li
+		margin-top: 15px
+		a
+			color: white
+			z-index: 999999999999999999
+			font-size: 3rem
