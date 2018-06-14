@@ -55,7 +55,7 @@ body {
   background: #f6f5f5;
   position: relative;
   overflow-x: hidden;
-  background: url(../img/bg_abs.png) left -290px top calc(100% + 47px)/auto auto no-repeat fixed, #f6f5f5; }
+  background: url(../img/polosa2.png) left -290px top calc(100% + 47px)/auto auto no-repeat fixed, #f6f5f5; }
 
 .paralax_block {
   position: absolute;
