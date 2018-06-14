@@ -489,6 +489,7 @@ header
 				background: #ff1516
 				font-weight: 700
 				border: 0
+				width: 265px
 				cursor: pointer
 #projects
 	// border-bottom: 3px solid #ff1516
@@ -539,9 +540,58 @@ header
 					height: auto
 					border-bottom: 3px solid #ff1516
 #about
-	border-top: 3px solid red
+	// border-top: 3px solid red
+	background: #fff
+	overflow: hidden
+	.dgdgd
+		display: flex
 	.about_wrap
-		display: flex																	
+		display: flex
+		justify-content: center
+		align-items: center
+		.about_wrap__center
+			margin: 0px 10px
+		.about_wrap__right
+			margin-left: 20px
+			.about_img
+				margin-right: -400px
+		.about_wrap__left
+			margin-right: 20px
+			.about_img
+				margin-left: -400px
+		.about_wrap__list
+			.about_header
+				color: #000000
+				font-family: 'Montserrat', sans-serif
+				font-size: 2.4rem
+				font-weight: 700
+				// line-height: 30px
+				text-align: center
+				height: 130px
+				
+				text-transform: uppercase
+			.about_info
+				color: #000000
+				font-family: 'Roboto', sans-serif
+				font-size: 1.3rem
+				text-align: center
+				margin-top: 30px
+				margin-bottom: 40px
+				font-weight: 500
+				height: 75px
+			a
+				color: #ff1516
+				display: block
+				text-align: center
+				padding: 15px 0px
+				font-family: 'Roboto', sans-serif
+				font-size: 1.4rem
+				text-decoration: none
+				border: 2px solid #ff1516
+				width: 115px
+				margin: 0 auto
+				
+				font-weight: 500													
 #skills
 	background: #f6f5f5
 	padding-top: 90px
@@ -823,6 +873,7 @@ footer
 				.strl_slide
 					font-size: 1.6rem
 @media all and (max-width:1170px)
+
 	header
 		nav 
 			ul 
@@ -839,6 +890,14 @@ footer
 				.phones_number 
 					a
 						font-size: 1.4rem
+	#about 
+		.about_wrap 
+			.about_wrap__right 
+				.about_img
+					margin-right: -200px
+			.about_wrap__left
+				.about_img
+					margin-left: -250px	
 @media all and (max-width:1040px)
 	#second 
 		.wrap_slide 
@@ -850,6 +909,21 @@ footer
 		.fa.fa-chevron-right_r.slick-arrow
 			right: 0px
 			top: 20%
+	#about 
+		.about_wrap
+			flex-direction: column
+	#about 
+		.about_wrap 
+			.about_wrap__right 
+				.about_img
+					margin-right: 0px
+					img
+						max-width: 100%
+			.about_wrap__left
+				.about_img
+					margin-left: -150px	
+					img
+						max-width: 100%
 @media all and (max-width:1025px)	
 	header 
 		.feedback
@@ -961,7 +1035,15 @@ footer
 					.skill_list
 						text-align: left!important
 						
-					
+@media all and (max-width:720px)
+	#about 
+		.dgdgd
+			flex-direction: column
+			align-items: center
+	#about 
+		.about_wrap 
+			.about_wrap__center	
+				margin: 20px 0px				
 @media all and (max-width:700px)
 	#capabilities 
 		.capab_wrap__list 
