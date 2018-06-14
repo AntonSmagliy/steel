@@ -138,3 +138,15 @@ $(function(){
 //  });	
 
 // }); 
+$(document).ready(function(){
+  $('.burger_menu').click(function () {
+    $('body').css('overflow', 'hidden');
+    $('#overlay').css('display', 'flex');
+    $('.menuitems').addClass('menu_active_burger');
+  });
+  $('#overlay').click(function () {
+    $('body').css('overflow', 'auto');
+    $(this).css('display', 'none');
+    $('.menuitems').removeClass('menu_active_burger');
+  })
+})
