@@ -54,7 +54,8 @@ html {
 body {
   background: #f6f5f5;
   position: relative;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background: url(../img/bg_abs.png) left -290px top calc(100% + 47px)/auto auto no-repeat fixed, #f6f5f5; }
 
 .paralax_block {
   position: absolute;
@@ -288,7 +289,9 @@ header {
           font-weight: 500; }
 
 #uslugi {
-  padding-bottom: 85px; }
+  padding-bottom: 85px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, transparent), color-stop(15%, #fff));
+  background: linear-gradient(to bottom, transparent 15%, #fff 15%); }
   #uslugi h2 {
     text-align: center;
     color: #000000;
