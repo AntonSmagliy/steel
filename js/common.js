@@ -148,7 +148,13 @@ $(document).ready(function(){
     $('body').css('overflow', 'auto');
     $(this).css('display', 'none');
     $('.menuitems').removeClass('menu_active_burger');
+  });
+  $('nav .menuitems li').click(function () {
+    $('body').css('overflow', 'auto');
+    $('#overlay').css('display', 'none');
+    $('.menuitems').removeClass('menu_active_burger');
   })
+
 })
 
 $(document).ready(function(){
