@@ -489,53 +489,54 @@ html {
 }
 
 /* line 336, /home/vinnope/workspace/steel/sass/main.sass */
-.section4 .section4_container .list_type .list_type_item p {
+.section4 .section4_container .list_type .list_type_item a {
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 43px;
   margin-left: 15px;
+  text-decoration: none;
 }
 
-/* line 343, /home/vinnope/workspace/steel/sass/main.sass */
+/* line 344, /home/vinnope/workspace/steel/sass/main.sass */
 .section5 {
   background: #fff;
   padding-bottom: 30px;
 }
 
-/* line 346, /home/vinnope/workspace/steel/sass/main.sass */
+/* line 347, /home/vinnope/workspace/steel/sass/main.sass */
 .section5 .section5_container {
   max-width: 955px;
   width: 90%;
   margin: 0 auto;
 }
 
-/* line 350, /home/vinnope/workspace/steel/sass/main.sass */
+/* line 351, /home/vinnope/workspace/steel/sass/main.sass */
 .section5 .section5_container .ver_line {
   margin-top: 45px;
   margin-bottom: 40px;
 }
 
-/* line 353, /home/vinnope/workspace/steel/sass/main.sass */
+/* line 354, /home/vinnope/workspace/steel/sass/main.sass */
 .section5 .section5_container .section5_content {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 356, /home/vinnope/workspace/steel/sass/main.sass */
+/* line 357, /home/vinnope/workspace/steel/sass/main.sass */
 .section5 .section5_container .section5_content .lesnitca {
   width: 418px;
   height: 314px;
 }
 
-/* line 359, /home/vinnope/workspace/steel/sass/main.sass */
+/* line 360, /home/vinnope/workspace/steel/sass/main.sass */
 .section5 .section5_container .section5_content .wrapper {
   font-size: 13px;
   padding-left: 20px;
 }
 
-/* line 362, /home/vinnope/workspace/steel/sass/main.sass */
+/* line 363, /home/vinnope/workspace/steel/sass/main.sass */
 .section5 .section5_container .section5_content .wrapper h2 {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -545,12 +546,12 @@ html {
   margin-bottom: 20px;
 }
 
-/* line 369, /home/vinnope/workspace/steel/sass/main.sass */
+/* line 370, /home/vinnope/workspace/steel/sass/main.sass */
 .section5 .section5_container .section5_content .wrapper ul {
   margin-bottom: 20px;
 }
 
-/* line 371, /home/vinnope/workspace/steel/sass/main.sass */
+/* line 372, /home/vinnope/workspace/steel/sass/main.sass */
 .section5 .section5_container .section5_content .wrapper ul li {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -560,7 +561,7 @@ html {
   margin-left: 15px;
 }
 
-/* line 378, /home/vinnope/workspace/steel/sass/main.sass */
+/* line 379, /home/vinnope/workspace/steel/sass/main.sass */
 .section5 .section5_container .section5_content .wrapper ul li span {
   color: #ff1516;
   font-family: "Roboto", sans-serif;
@@ -569,7 +570,7 @@ html {
   line-height: 18px;
 }
 
-/* line 384, /home/vinnope/workspace/steel/sass/main.sass */
+/* line 385, /home/vinnope/workspace/steel/sass/main.sass */
 .section5 .section5_container .section5_content .wrapper p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -577,7 +578,7 @@ html {
   margin-bottom: 20px;
 }
 
-/* line 390, /home/vinnope/workspace/steel/sass/main.sass */
+/* line 391, /home/vinnope/workspace/steel/sass/main.sass */
 .section5 .section5_container .section5_content .wrapper small {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -587,7 +588,7 @@ html {
   margin-bottom: 20px;
 }
 
-/* line 398, /home/vinnope/workspace/steel/sass/main.sass */
+/* line 399, /home/vinnope/workspace/steel/sass/main.sass */
 .section5 .section5_container .section5_content .wrapper .standarts li {
   list-style-type: disc !important;
   list-style-image: none;
@@ -599,14 +600,14 @@ html {
   margin-left: 15px;
 }
 
-/* line 407, /home/vinnope/workspace/steel/sass/main.sass */
+/* line 408, /home/vinnope/workspace/steel/sass/main.sass */
 #second .main_bg {
   padding: 0px;
   padding-right: 120px;
   background-position-y: 0;
 }
 
-/* line 411, /home/vinnope/workspace/steel/sass/main.sass */
+/* line 412, /home/vinnope/workspace/steel/sass/main.sass */
 #second .main_bg h2 {
   padding-left: 70px;
   font-family: "Montserrat", sans-serif;
@@ -619,7 +620,7 @@ html {
   margin-bottom: 25px;
 }
 
-/* line 421, /home/vinnope/workspace/steel/sass/main.sass */
+/* line 422, /home/vinnope/workspace/steel/sass/main.sass */
 #second .main_bg ul {
   padding-left: 70px;
   width: 100%;
@@ -630,7 +631,7 @@ html {
   padding-bottom: 5px;
 }
 
-/* line 429, /home/vinnope/workspace/steel/sass/main.sass */
+/* line 430, /home/vinnope/workspace/steel/sass/main.sass */
 #second .main_bg ul li {
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
@@ -640,7 +641,7 @@ html {
   margin-bottom: 5px;
 }
 
-/* line 436, /home/vinnope/workspace/steel/sass/main.sass */
+/* line 437, /home/vinnope/workspace/steel/sass/main.sass */
 #ant_sec {
   margin-top: 40px;
 }
