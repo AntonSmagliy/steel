@@ -59,7 +59,7 @@ body {
 .paralax_block {
   position: absolute;
   z-index: -99;
-  height: 1100px;
+  height: 1150px;
   width: 2000px;
   left: -40%;
   background: url(../img/bg_abs.png) left calc(-211px - 87px) top calc(50%)/auto auto no-repeat fixed; }
