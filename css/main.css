@@ -331,7 +331,8 @@ html {
       cursor: pointer; }
 
 .section4 {
-  background: #fff; }
+  background: #fff;
+  padding-top: 20px; }
   .section4 .section4_container {
     max-width: 600px;
     width: 90%;
